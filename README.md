@@ -1,2 +1,4 @@
-# project-manager
-Web site for project and task management.
+# Gestión de Proyectos
+Pagina web para la gestión de proyectos y asignacion de tareas.
+
+
