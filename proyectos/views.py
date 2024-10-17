@@ -2,13 +2,16 @@ from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
 from .models import Proyecto, Tarea
 from .forms import ProyectoForm, TareaForm
+from django.views.decorators.csrf import csrf_protect
 
+@csrf_protect
 @login_required
 def lista_proyectos(request):
     proyectos = Proyecto.objects.all()
     return render(request, 'proyectos/lista_proyectos.html', {'proyectos': proyectos})
 
-# @login_required
+@csrf_protect
+@login_required
 def crear_proyecto(request):
     if request.method == 'POST':
         form = ProyectoForm(request.POST)

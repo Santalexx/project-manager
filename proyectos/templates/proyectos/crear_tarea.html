@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load crispy_forms_tags %}
+{% csrf_token %}
 
 {% block content %}
 <h2>Crear Nueva Tarea para {{ proyecto.nombre }}</h2>
