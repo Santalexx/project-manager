@@ -25,9 +25,9 @@ SECRET_KEY = 'django-insecure-tk-baiih-7&+4p9jo)o-fq&#44$f0y96t84tfny_!3v0mx5+ot
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'curious-board-larry-scope.trycloudflare.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'organizations-often-generators-background.trycloudflare.com/'], 
 
-CSRF_TRUSTED_ORIGINS = ['https://curious-board-larry-scope.trycloudflare.com']
+CSRF_TRUSTED_ORIGINS = ['https://organizations-often-generators-background.trycloudflare.com/']
 
 # Application definition
 
