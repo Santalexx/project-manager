@@ -116,22 +116,3 @@ Antes de comenzar, asegúrate de tener instalados:
    ```
 10. Abre un navegador y ve a `http://127.0.0.1:8000/`
 
-## Contribuir
-
-Si deseas contribuir al proyecto, por favor:
-
-1. Haz un fork del repositorio
-2. Crea una nueva rama (`git checkout -b feature/AmazingFeature`)
-3. Haz commit de tus cambios (`git commit -m 'Add some AmazingFeature'`)
-4. Haz push a la rama (`git push origin feature/AmazingFeature`)
-5. Abre un Pull Request
-
-## Licencia
-
-Este proyecto está bajo la licencia MIT. Ver el archivo `LICENSE` para más detalles.
-
-## Contacto
-
-Lucas Grajales Rojas - [tu-email@example.com](mailto:tu-email@example.com)
-
-Enlace del proyecto: [https://github.com/Santalexx/project-manager](https://github.com/Santalexx/project-manager)
