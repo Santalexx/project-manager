@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>{{ proyecto.nombre }}</h2>
+<p>{{ proyecto.descripcion }}</p>
+<p>Fecha de inicio: {{ proyecto.fecha_inicio }}</p>
+<p>Fecha de finalización: {{ proyecto.fecha_fin }}</p>
+
+<h3>Tareas</h3>
+<ul class="list-group">
+    {% for tarea in tareas %}
+    <li class="list-group-item">
+        {{ tarea.nombre }} - {{ tarea.get_estado_display }}
+    </li>
+    {% empty %}
+    <li class="list-group-item">No hay tareas aún.</li>
+    {% endfor %}
+</ul>
+
+<a href="{% url 'proyectos:crear_tarea' proyecto.pk %}" class="btn btn-primary mt-3">Nueva Tarea</a>
+{% endblock %}
